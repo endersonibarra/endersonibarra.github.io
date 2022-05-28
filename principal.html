@@ -3,7 +3,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Smooch&display=swap" rel="stylesheet">  
-<link rel="stylesheet" href="estilos.css"
+<link rel="stylesheet" href="estilos.css">
 
 
 <head>
@@ -11,28 +11,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"> </script>
+  <script src="validacion.js"></script>
 
   <title>Reportes Gestión</title>
 </head>
 
 <body>
   
-  <h1><center>KPI´S BI</center></h1>
+  <h1><center>Indicadores de Gestión Comercial y Logística</center></h1>
+  <br><br><br><br><br>
 
   <p>La información presente en los reportes de esta web, son de uso exclusivo de la empresa y deben ser manejados de manera confidencial </p>
-</br>
+<br><br>
   <p> En la web vamos a conseguir información de venta del día anterior y el resumen del mes, el ranking por categorías del día mes y los principales valores logisticos y de atención al cliente.</p>
-
+</br></br></br></br></br>
 
 <div id="contenedor">
  <div class="item item-1"><a href="Ventadiaria.html"> Venta Diaria </a></div>
  <div class="item item-2"><a href="categorias.html"> Categorias</div>
  <div class="item item-3"><a href="atc.html"> Atc & Logística</div>
- <div class="item item-4">Contactanos</div> 
 
 
-
+</br></br></br>
 </div>
+<title> Contactanos</title>
+<form action="procesar.php" method="post" id="contacto">
+  <table>
+    <Tr>
+      <td><i class="fas fa-clipboard" style="color: #1c7ed6;" ></i> Nombre: </td>
+      <td>
+      <input type="text" name="Nombre" id="Nombre"/>
+    </td>
+    </Tr>
+    <tr>
+      <td><i class="fas fa-envelope" style="color: #1c7ed6;" ></i> email:</td>
+      <td>
+        <input type="text" name="email" id="email"/>
+      </td>
+      <tr>
+        <td><i class="fas fa-fax" style="color: #1c7ed6;" ></i> teléfono:</td>
+        <td>
+          <input type="text" name="teléfono" id="telefono"/>
+        </td>
+    </tr>
+      </table>
+      <br><br><br>
+      <p>
+        <input type="submit" value="Enviar" id="enviar"/>
+        <input type="reset" value="Borrar" id="borrar"/>
+      </p>
+</form>
 
 
 
@@ -42,12 +70,11 @@
  
     
 
-    
 
 
-  
+
 </body>
-
+</br></br></br></br></br>
 
 <footer>
   Desarrollado por Enderson Ibarra. Ultima fecha de actualización 27.05.2022
